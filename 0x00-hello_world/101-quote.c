@@ -3,6 +3,7 @@
 /**
 *main - A program that prints a standard error
 *Return 0 (Success)
+* Description: Longer description of the function
 */
 int main(void)
 {
