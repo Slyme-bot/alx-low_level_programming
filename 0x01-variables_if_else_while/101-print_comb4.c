@@ -1,10 +1,9 @@
 #include <stdio.h>
 /**
- * main - A program that prints double digit
+ * main - Program that print possible combinations of three different digits
+ *Description: Possible Combinations
  *
- * Description: A Double Digit Program
- *
- * Return: 0(Success)
+ * Return: Always 0.
  */
 int main(void)
 {
@@ -14,22 +13,23 @@ int main(void)
 
 	for (a = 0; a < 8; a++)
 	{
-	for (b = a + 1; b < 9; b++)
-	{
-		for (c = b + 1; c < 10; c++)
+		for (b = a + 1; b < 9; b++)
 		{
-		putchar((a % 10) + '0');
-		putchar((b % 10) + '0');
-		putchar((c % 10) + '0');
-		if (a <= 7 && b <= 8 && c <= 9)
-		{
-		putchar(',');
-		putchar(' ');
-		}
+			for (c = b + 1; c < 10; c++)
+			{
+				putchar((a % 10) + '0');
+				putchar((b % 10) + '0');
+				putchar((c % 10) + '0');
+
+				if (a == 7 && b == 8 && c == 9)
+					continue;
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
-	}
+
 	putchar('\n');
+
 	return (0);
 }
-
