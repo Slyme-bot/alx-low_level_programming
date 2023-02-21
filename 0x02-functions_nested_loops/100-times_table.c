@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *
- *
+ *print_times_table - Program that prints value in a time table
+ *@n:This is the number of value
  *
  *
  */
