@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * more_abers - Prints the abers 0-14 ten times.
+ * more_numbers - Prints the abers 0-14 ten times.
  */
-void more_abers(void)
+void more_numbers(void)
 {
 	int a, count;
 
